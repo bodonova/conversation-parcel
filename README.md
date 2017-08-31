@@ -1,6 +1,6 @@
 # Conversation Sample Application [![Build Status](https://travis-ci.org/watson-developer-cloud/conversation-simple.svg?branch=master)](http://travis-ci.org/watson-developer-cloud/conversation-simple) [![codecov.io](https://codecov.io/github/watson-developer-cloud/conversation-simple/coverage.svg?branch=master)](https://codecov.io/github/watson-developer-cloud/conversation-simple?branch=master)
 
-This Node.js app demonstrates the Conversation service in a simple chat interface simulating a cognitive car dashboard.
+This Node.js app demonstrates the Conversation service in a simple chat interface interfaced to a dummy parcel lookup service. It is heavily based on the simple conversation sample (https://github.com/watson-developer-cloud/conversation-simple)
 
 ![Demo](readme_images/demo.gif)
 
@@ -53,9 +53,9 @@ You can use an exisiting instance of the Conversation service. Otherwise, follow
 
 1. Click the **Import workspace** icon in the Conversation service tool. Specify the location of the workspace JSON file in your local copy of the app project:
 
-    `<project_root>/training/car_workspace.json`
+    `<project_root>/training/caarcel_workspace.json`
 
-1. Select **Everything (Intents, Entities, and Dialog)** and then click **Import**. The car dashboard workspace is created.
+1. Select **Everything (Intents, Entities, and Dialog)** and then click **Import**. The parcel dashboard workspace is created.
 
 ### Configuring the app environment
 
@@ -168,7 +168,7 @@ You can use Cloud Foundry to deploy your local version of the app to Bluemix.
      label: conversation
      plan: free
   applications:
-  - name: conversation-simple-app-test1
+  - name: conversation-parcel-app-test1
    command: npm start
    path: .
    memory: 256M
