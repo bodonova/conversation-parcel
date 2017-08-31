@@ -53,7 +53,7 @@ You can use an exisiting instance of the Conversation service. Otherwise, follow
 
 1. Click the **Import workspace** icon in the Conversation service tool. Specify the location of the workspace JSON file in your local copy of the app project:
 
-    `<project_root>/training/caarcel_workspace.json`
+    `<project_root>/training/parcel_workspace.json`
 
 1. Select **Everything (Intents, Entities, and Dialog)** and then click **Import**. The parcel dashboard workspace is created.
 
